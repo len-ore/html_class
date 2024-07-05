@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  justify-content: center;
+  color: aquamarine;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 50px;
+  background-color: #13181d;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+}
+
+nav > ul > li {
+  margin: 0px 20px;
+  list-style: none;
+}
+
+nav > ul > li > a {
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+.logo__container {
+  display: flex;
+  align-items: center;
+}
+
+#logo_txt {
+  color: white;
+}
+
+#contact {
+  background-color: rgba(45, 230, 230, 0.463);
+  padding: 12px 20px;
+  border-radius: 30px;
+  /* correction - moved #contact to the span tag */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* new code - added a specific style for the text */
+#contact > a {
+  color: #16eeeee0;
+}
+
+/* Header Styles */
+header {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+  background-image: url(../img/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay__container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(6, 6, 6, 0.424);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.overlay__title {
+  font-size: 5rem;
+  color: white;
+}
+
+.overlay__txt {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.overlay__btn {
+  margin-top: 25px;
+  background-color: rgba(45, 230, 230, 0.463);
+  padding: 12px 20px;
+  border-radius: 30px;
+  color: #ffffff;
+  font-size: 32px;
+  border: none;
+}
